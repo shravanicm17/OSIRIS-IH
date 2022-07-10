@@ -58,6 +58,7 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
           ),
+
           SizedBox(height: 20),
           Container(
             height: 170,
@@ -102,12 +103,65 @@ class ProfilePage extends StatelessWidget {
                   height: 2,
                 ),
                 Text('@ username',style: TextStyle(color: Colors.grey[800],),)
-
               ],
             )
+          ),
+          SizedBox(height:80 ),
+          Container(
+            width: 500,
+            height: 520,
+            child: new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: new ElevatedButton(
+              child: Text('SUPPORT'),
+              onPressed: (){},
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.all(20.0),
+                fixedSize: Size(150, 60),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                ),
+                textStyle: TextStyle(
+                  fontSize: 20,
+                ),
+                primary: Colors.lightBlueAccent[100],
+                onPrimary: Colors.black87,
+                elevation: 15,
+              ),
+          ),
+            ),
+               Padding(
+                 padding: const EdgeInsets.all(8.0),
+                 child: new ElevatedButton(
+                    child: Text('SETTINGS'),
+                    onPressed: (){},
+                    style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.all(20.0),
+                      fixedSize: Size(150, 60),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      textStyle: TextStyle(
+                        fontSize: 20,
+                      ),
+                      primary: Colors.lightBlueAccent[100],
+                      onPrimary: Colors.black87,
+                      elevation: 15,
+                    ),
+                  ),
+               ),
+              ],
+            ),
           ),
         ],
       ),
     );
   }
 }
+
+
