@@ -116,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
                       Navigator.pushNamed(context, '/signup');
                     },
                     child: Text(
-                      'Register now',
+                      'Register',
                       style: TextStyle(
                         color: Colors.indigo,
                         fontSize: 18,
