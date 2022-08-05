@@ -10,6 +10,7 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   String name = 'Shravani Chinchmalatpure';
+  String username = '@shravanicm17';
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +80,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        '@ username',
+                        username ,
                         style: TextStyle(
                           color: Colors.grey[800],
                         ),
@@ -88,7 +89,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ),
                 Container(
-                  // color: Colors.grey[300],
+                  //color: Colors.grey[300],
                   color: Color(0xffEDF2F4),
                   height: MediaQuery.of(context).size.height * 0.25,
                   width: MediaQuery.of(context).size.width,
@@ -100,7 +101,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   child: const Align(
                     alignment: Alignment.topLeft,
                     child: Text(
-                      ' \tCONTACT: 7219808011\n\n\n \tADDRESS: Krushna Nagar,Amravati\n\n\n \tDEVICE ID: 123654',
+                      ' \tCONTACT: 7219808011\n\n\tADDRESS: Krushna Nagar,Amravati\n\n\tDEVICE ID: 123654',
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
                     ),
@@ -110,6 +111,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height * 0.1,
                   margin: const EdgeInsets.symmetric(vertical: 30),
+                  //color: Colors.grey,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
